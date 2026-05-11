@@ -488,38 +488,39 @@ footer .wrap{
         <div class="hero-label">Backend Engineer · SDE-2</div>
         <h1 class="hero-name">Aman<br/><em>Sharma</em></h1>
         <p class="hero-role">
-          <strong>Node.js · Golang · Microservices</strong><br/>
+          <strong>Golang · Node.js · TypeScript</strong><br/>
           Distributed Systems · Payments · Multi-tenant SaaS
         </p>
         <p class="hero-bio">
           I build backend systems that handle real load — cut API latency
-          from <strong>2.1s to 400ms</strong>, processed <strong>5K+ payments with
-          zero duplicates</strong>, and architected SaaS serving
-          <strong>1,000+ organizations</strong>. 3.5 years shipping production backend
-          in Node.js and TypeScript, expanding into Golang.
+          from <strong>2.1s to 400ms</strong>, processed <strong>50K+ payments with
+          zero duplicates</strong>, architected SaaS serving
+          <strong>10k+ organizations</strong>, and engineered Golang workers
+          processing <strong>100K+ async jobs/day</strong>. 3.5 years shipping
+          production backend in Golang, Node.js, and TypeScript.
         </p>
         <div class="hero-actions">
           <a href="mailto:amansh2786@gmail.com" class="btn btn-primary">Get in touch</a>
           <a href="https://github.com/amanshr72" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
-          <a href="https://linkedin.com/in/aman-sharma-3524a91a6" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+          <a href="https://linkedin.com/in/amansh72" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
         </div>
       </div>
 
       <div class="hero-stats">
         <div class="hstat">
-          <div class="hstat-num">−60%</div>
+          <div class="hstat-num">−80%</div>
           <div class="hstat-label">API latency · 2.1s → 400ms</div>
         </div>
         <div class="hstat">
           <div class="hstat-num">0</div>
-          <div class="hstat-label">Duplicate charges · 5K+ txns</div>
+          <div class="hstat-label">Duplicate charges · 50K+ txns</div>
         </div>
         <div class="hstat">
-          <div class="hstat-num">1M+</div>
-          <div class="hstat-label">Monthly CDN requests served</div>
+          <div class="hstat-num">100K+</div>
+          <div class="hstat-label">Async jobs/day · Golang worker</div>
         </div>
         <div class="hstat">
-          <div class="hstat-num">1,000+</div>
+          <div class="hstat-num">10k+</div>
           <div class="hstat-label">Organizations on SaaS LMS</div>
         </div>
       </div>
@@ -546,11 +547,11 @@ footer .wrap{
       <div class="exp-body">
         <div class="exp-role">Software Engineer (Backend)</div>
         <ul class="exp-points">
-          <li>Architected multi-tenant SaaS LMS for 1,000+ organizations — row-level tenant isolation, subdomain routing, RBAC, full subscription lifecycle. Zero cross-tenant data leaks.</li>
-          <li>Built JivaSync matchmaking backend — profile management, multi-criteria search with composite indexing (−50% query time), event-driven notifications, WebSocket real-time updates.</li>
-          <li>Engineered idempotent payment infrastructure across Stripe, Razorpay, PayPal — auto-renewals, webhook-driven state machine, parent-child subscription hierarchy. 5K+ transactions, zero duplicate charges.</li>
-          <li>MySQL schema optimization & indexing → query latency −35%, throughput +60% on 100K+ record datasets.</li>
-          <li>Redis TTL caching + BullMQ async queues → 10K+ bulk ops handled without blocking live traffic, processing time −50%.</li>
+          <li>Architected multi-tenant SaaS LMS for 10K+ organizations — row-level tenant isolation enforced at query layer, subdomain routing, RBAC, subscription lifecycle management. Zero cross-tenant data leaks.</li>
+          <li>Engineered a Golang worker service processing 100K+ async jobs/day for video/image processing and report generation using goroutines, channels, and mutex synchronization — 70% faster processing with fault-tolerant execution.</li>
+          <li>Optimized complex MySQL analytical and heavy-join queries via batched fetching, query restructuring, and in-memory mapping — response time from 7s to under 100ms, DB throughput +40%.</li>
+          <li>Engineered idempotent payment workflows across Stripe, Razorpay, and PayPal — webhook-driven state machine, auto-renewals, parent-child subscription hierarchy. 50K+ transactions, zero duplicate charges.</li>
+          <li>Redis TTL caching, rate limiting, session store + BullMQ async queues → 10K+ bulk ops handled without blocking live traffic, processing time −50%.</li>
           <li>AWS S3 + CloudFront CDN → static asset load time −70%, 1M+ monthly requests served reliably.</li>
         </ul>
         <div class="exp-links">
@@ -570,11 +571,11 @@ footer .wrap{
       <div class="exp-body">
         <div class="exp-role">Software Engineer (Backend)</div>
         <ul class="exp-points">
-          <li>Migrated Plus-X from Laravel monolith → Node.js self-deployable microservices. API latency: 2.1s → 400ms (−60%).</li>
+          <li>Migrated Plus-X from Laravel monolith → Node.js self-deployable microservices. API latency: 2.1s → 400ms (−80% reduction).</li>
+          <li>Built Golang rate limiter service using Token Bucket algorithm with Redis, handling 100K+ requests/day across microservices with under 15ms latency.</li>
           <li>Shipped versioned REST APIs + GraphQL layer with JWT auth, RBAC, rate limiting, and middleware pipeline — 99% uptime for external clients.</li>
-          <li>Engineered idempotent Stripe subscription engine — auto-debit, webhook state machine, failure recovery. Zero missed transitions in production.</li>
-          <li>Built secure card vault with tokenized storage, reusable payment methods, and PCI-safe card management.</li>
-          <li>MySQL throughput +40% via query optimization, compound indexing, N+1 elimination. Admin panel for 10K+ daily ops with granular RBAC.</li>
+          <li>Built secure Stripe workflows for card verification, tokenised storage, and reusable payment methods with PCI-compliant handling. Engineered secure card vault for PCI-safe card management.</li>
+          <li>Schema optimization and indexing strategies — query latency −40%, database throughput +60%.</li>
         </ul>
         <div class="exp-links">
           <a href="https://ridezapp.in" target="_blank" rel="noopener" class="elink">Ridez</a>
@@ -595,8 +596,8 @@ footer .wrap{
       <div class="exp-body">
         <div class="exp-role">Software Engineer (Backend)</div>
         <ul class="exp-points">
-          <li>Backend for internal Ticket Management System &amp; WMS — REST APIs for inventory, order tracking, user roles, and reporting modules.</li>
-          <li>Replaced long-polling with WebSocket for real-time task board sync → latency &lt;200ms. Containerized all services with Docker, standardizing internal deployment workflow.</li>
+          <li>Backend for internal Ticket Management System &amp; WMS — REST APIs for inventory, order tracking, RBAC-enabled user management, and reporting workflows.</li>
+          <li>Replaced long-polling with Golang/Gin WebSocket server, scaling to 5,000+ concurrent connections and reducing live task-board latency to under 100ms. Containerized all services with Docker, standardizing deployment workflows.</li>
           <li>Shipped logistics APIs and optimized high-volume transactional queries — response time −40% for concurrent warehouse operations.</li>
         </ul>
       </div>
@@ -612,9 +613,9 @@ footer .wrap{
       <div class="exp-body">
         <div class="exp-role">Software Engineer (Backend)</div>
         <ul class="exp-points">
-          <li>Engineered modular monolith B2B e-commerce platform (Navbazar) — auth, catalogue, order lifecycle, payments, dashboards — supporting 100+ vendors and 10K+ monthly transactions.</li>
+          <li>Engineered modular monolith B2B e-commerce platform (Navbazar) — auth, catalogue, order lifecycle, payments, dashboards — supporting multi-vendor workflows, 500+ vendors, and 100K+ monthly transactions with clean service boundaries.</li>
           <li>Eliminated N+1 queries, compound indexing, schema normalization → DB throughput +40% under high read/write traffic.</li>
-          <li>Read-through Redis cache with LRU eviction for product listings and sessions → repeat DB reads −65%. Shipped email/SMS notification service and bulk CSV import pipeline.</li>
+          <li>Read-through Redis cache with LRU eviction for product listings and sessions → repeat DB reads −65%. Shipped email/SMS notification service and bulk CSV import pipeline, reducing manual onboarding effort for new vendors.</li>
         </ul>
         <div class="exp-links">
           <a href="https://navbazar.in" target="_blank" rel="noopener" class="elink">Navbazar</a>
@@ -645,9 +646,9 @@ footer .wrap{
             <div class="proj-name">Yuva Quest — Multi-tenant LMS</div>
             <span class="proj-status ps-live">Live</span>
           </div>
-          <div class="proj-desc">SaaS LMS for 1,000+ organizations. Row-level tenant isolation, subdomain routing, subscription lifecycle, RBAC, multi-language, CloudFront-S3 delivery. Zero cross-tenant data leaks.</div>
+          <div class="proj-desc">SaaS LMS for 10K+ organizations. Row-level tenant isolation enforced at query layer, subdomain routing, subscription lifecycle, RBAC, multi-language, CloudFront-S3 delivery. Zero cross-tenant data leaks.</div>
           <div class="proj-stack">
-            <span class="ptag hi">Node.js</span><span class="ptag hi">TypeScript</span>
+            <span class="ptag hi">Golang</span><span class="ptag hi">Node.js</span><span class="ptag hi">TypeScript</span>
             <span class="ptag">MySQL</span><span class="ptag">Redis</span><span class="ptag">AWS S3</span><span class="ptag">CloudFront</span>
           </div>
           <div class="proj-links">
@@ -660,7 +661,7 @@ footer .wrap{
             <div class="proj-name">JivaSync — Matchmaking Platform</div>
             <span class="proj-status ps-live">Live</span>
           </div>
-          <div class="proj-desc">Profile management, multi-criteria search (composite indexing, −50% query time), event-driven notifications, WebSocket real-time updates.</div>
+          <div class="proj-desc">Profile management, multi-criteria search with composite indexing (−50% query time), event-driven notifications, WebSocket real-time updates.</div>
           <div class="proj-stack">
             <span class="ptag hi">Node.js</span>
             <span class="ptag">MongoDB</span><span class="ptag">Redis</span><span class="ptag">WebSocket</span>
@@ -675,9 +676,9 @@ footer .wrap{
             <div class="proj-name">Plus-X Migration</div>
             <span class="proj-status ps-ship">Shipped</span>
           </div>
-          <div class="proj-desc">Laravel monolith → Node.js microservices. API latency 2.1s → 400ms. Versioned REST + GraphQL APIs, Stripe payments, secure card vault, 99% uptime for external clients.</div>
+          <div class="proj-desc">Laravel monolith → Node.js microservices. API latency 2.1s → 400ms (−80%). Golang rate limiter handling 100K+ req/day at &lt;15ms. Versioned REST + GraphQL APIs, Stripe card vault, 99% uptime.</div>
           <div class="proj-stack">
-            <span class="ptag hi">Node.js</span><span class="ptag hi">Microservices</span>
+            <span class="ptag hi">Golang</span><span class="ptag hi">Node.js</span><span class="ptag hi">Microservices</span>
             <span class="ptag">GraphQL</span><span class="ptag">Stripe</span><span class="ptag">MySQL</span>
           </div>
           <div class="proj-links">
@@ -690,7 +691,7 @@ footer .wrap{
             <div class="proj-name">Navbazar — B2B E-Commerce</div>
             <span class="proj-status ps-live">Live</span>
           </div>
-          <div class="proj-desc">Multi-vendor B2B platform, 100+ vendors, 10K+ monthly transactions, full order lifecycle, payments, dashboards, Redis caching (−65% repeat DB reads).</div>
+          <div class="proj-desc">Multi-vendor B2B platform, 500+ vendors, 100K+ monthly transactions, full order lifecycle, payments, dashboards, Redis caching (−65% repeat DB reads).</div>
           <div class="proj-stack">
             <span class="ptag">PHP</span><span class="ptag">Laravel</span>
             <span class="ptag">MySQL</span><span class="ptag">Redis</span><span class="ptag">Multi-vendor</span>
@@ -741,12 +742,27 @@ footer .wrap{
 
         <div class="proj-card">
           <div class="proj-card-top">
+            <div class="proj-name">ScaleQueue</div>
+            <span class="proj-status ps-ship">Shipped</span>
+          </div>
+          <div class="proj-desc">Distributed job queue processing 500K+ jobs/month with Redis consumer groups, PEL recovery, priority lanes, graceful shutdown, retry logic, dead-letter handling, and real-time monitoring dashboard. Docker orchestration.</div>
+          <div class="proj-stack">
+            <span class="ptag hi">Golang</span><span class="ptag hi">Node.js</span>
+            <span class="ptag">Redis</span><span class="ptag">Consumer Groups</span><span class="ptag">DLQ</span><span class="ptag">Docker</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/amanshr72" target="_blank" class="plink p">↗ GitHub</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-card-top">
             <div class="proj-name">Auth Service</div>
             <span class="proj-status ps-ship">Shipped</span>
           </div>
           <div class="proj-desc">JWT access/refresh token rotation, RBAC middleware, Redis-backed rate limiting, session management. Implemented in both Node.js and Golang.</div>
           <div class="proj-stack">
-            <span class="ptag hi">Node.js</span><span class="ptag hi">Golang</span>
+            <span class="ptag hi">Golang</span><span class="ptag hi">Node.js</span>
             <span class="ptag">JWT</span><span class="ptag">Redis</span><span class="ptag">RBAC</span>
           </div>
           <div class="proj-links">
@@ -771,27 +787,12 @@ footer .wrap{
 
         <div class="proj-card">
           <div class="proj-card-top">
-            <div class="proj-name">ScaleQueue</div>
-            <span class="proj-status ps-ship">Shipped</span>
-          </div>
-          <div class="proj-desc">Distributed job queue with priority lanes, retry logic, dead-letter handling, and a real-time dashboard for job monitoring. Built in Node.js with Redis and Golang worker.</div>
-          <div class="proj-stack">
-            <span class="ptag hi">Node.js</span><span class="ptag hi">Golang</span>
-            <span class="ptag">Redis</span><span class="ptag">Dashboard</span><span class="ptag">DLQ</span>
-          </div>
-          <div class="proj-links">
-            <a href="https://github.com/amanshr72" target="_blank" class="plink p">↗ GitHub</a>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-card-top">
             <div class="proj-name">Go REST Microservice</div>
             <span class="proj-status ps-wip">Expanding</span>
           </div>
           <div class="proj-desc">High-performance REST service in Golang — JWT middleware, PostgreSQL, Docker deployment, structured logging, clean architecture.</div>
           <div class="proj-stack">
-            <span class="ptag hi">Golang</span>
+            <span class="ptag hi">Golang</span><span class="ptag hi">Gin</span>
             <span class="ptag">PostgreSQL</span><span class="ptag">Docker</span><span class="ptag">REST</span>
           </div>
           <div class="proj-links">
@@ -819,9 +820,9 @@ footer .wrap{
         <div class="skill-group">
           <div class="sg-label">Languages</div>
           <div class="sg-tags">
-            <span class="stag p">JavaScript</span>
-            <span class="stag p">TypeScript</span>
             <span class="stag p">Golang</span>
+            <span class="stag p">TypeScript</span>
+            <span class="stag p">JavaScript</span>
             <span class="stag">PHP</span>
           </div>
         </div>
@@ -829,6 +830,7 @@ footer .wrap{
         <div class="skill-group">
           <div class="sg-label">Backend</div>
           <div class="sg-tags">
+            <span class="stag p">Golang / Gin</span>
             <span class="stag p">Node.js</span>
             <span class="stag p">Express.js</span>
             <span class="stag">REST APIs</span>
@@ -845,8 +847,10 @@ footer .wrap{
           <div class="sg-label">Architecture</div>
           <div class="sg-tags">
             <span class="stag p">Microservices</span>
+            <span class="stag p">Distributed Systems</span>
             <span class="stag p">Event-Driven</span>
-            <span class="stag">Multi-tenant SaaS</span>
+            <span class="stag">Cloud-Native Design</span>
+            <span class="stag">Multi-Tenant SaaS</span>
             <span class="stag">Distributed Caching</span>
             <span class="stag">Rate Limiting</span>
             <span class="stag">Load Balancing</span>
@@ -945,7 +949,7 @@ footer .wrap{
       <div class="r">
         <h2 class="contact-headline">Let's<br/><em>talk.</em></h2>
         <p class="contact-sub">
-          Backend engineer looking for <strong>SDE-2 roles</strong> in Node.js, Golang,
+          Backend engineer looking for <strong>SDE-2 roles</strong> in Golang, Node.js,
           and distributed systems.<br/>
           Delhi, India — <strong>open to remote globally.</strong>
         </p>
@@ -968,11 +972,11 @@ footer .wrap{
           </div>
           <span class="citem-arr">→</span>
         </a>
-        <a href="https://linkedin.com/in/aman-sharma-3524a91a6" target="_blank" rel="noopener" class="citem">
+        <a href="https://linkedin.com/in/amansh72" target="_blank" rel="noopener" class="citem">
           <span class="citem-icon" style="font-size:10px;font-weight:600">in</span>
           <div class="citem-text">
             <div class="citem-label">LinkedIn</div>
-            <div class="citem-val">aman-sharma-3524a91a6</div>
+            <div class="citem-val">linkedin.com/in/amansh72</div>
           </div>
           <span class="citem-arr">→</span>
         </a>
